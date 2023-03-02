@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Button from "./components/Button";
-
+import ButtonDecrement from "./components/ButtonDecrement";
+import ButtonIncrement from "./components/ButtonIncrement";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,8 +21,8 @@ function App() {
             <h2 class="text-4xl font-bold dark:text-white">Current counter: {count}</h2>
           
            <p class="m-3">
-            <Button text="Disminuir" onClick={handleDecrement} />
-            <Button text="Aumentar" onClick={handleIncrement} />
+            <ButtonIncrement text="Aumentar" onClick={handleIncrement} />
+            <ButtonDecrement text="Disminuir" onClick={handleDecrement} />
            </p>
           
     </div>
